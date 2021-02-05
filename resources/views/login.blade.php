@@ -7,20 +7,20 @@
         <meta content="Law Firm Website Template" name="keywords">
         <meta content="Law Firm Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="../img/favicon.ico" rel="icon">
+       <!-- Favicon -->
+       <link href="{{ url('/assets/img/favicon.ico') }}" rel="icon">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
-        
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="../lib/animate/animate.min.css" rel="stylesheet">
-        <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+       <!-- Google Font -->
+       <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+       
+       <!-- CSS Libraries -->
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+       <link href=".{{ url('/assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+       <link href="{{ url('/assets/lib//owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="../css/style.css" rel="stylesheet">
+       <!-- Template Stylesheet -->
+       <link href="{{ url('/assets/css/style.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -29,12 +29,11 @@
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row">
-                        <img style="margin-top: 10px; max-width: 100px; max-height: 80px;" src="../img/reic3.png" alt="Logo">
+                        <img style="margin-top: 10px; max-width: 100px; max-height: 80px;" src="{{ url('/assets/img/reic3.png') }}" alt="Logo">
                         <div class="col-lg-3">
                             <div class="logo">
-                                <a href="../views/index.html">
+                                <a href="{{ url('/') }}">
                                     <h1>REIC</h1>
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
                         </div>
@@ -51,22 +50,21 @@
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="../views/index.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="{{ url('/') }}" class="nav-item nav-link active">Inicio</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ley 842 de 2003</a>
                                     <div class="dropdown-menu">
-                                        <a href="../views/titles.html" class="dropdown-item">Títulos de la ley</a>
-                                        <a href="../views/complete.html" class="dropdown-item">Ley completa</a>
+                                        <a href="{{ url('/titles') }}" class="dropdown-item">Títulos de la ley</a>
+                                        <a href="{{ url('/complete') }}" class="dropdown-item">Ley completa</a>
                                     </div>
                                 </div>
-                                <a href="../views/about.html" class="nav-item nav-link">About</a>
+                                <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="../views/login.html">Login</a>
-                                <a class="btn" href="../views/register.html">Registrate</a>
+                                <a class="btn" href="{{ url("/login") }}">Login</a>
+                                <a class="btn" href="{{ url('/register') }}">Registrate</a>
                             </div>
                         </div>
                     </nav>
@@ -215,11 +213,11 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="../lib/easing/easing.min.js"></script>
-        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="{{ url('/assets/lib/easing/easing.min.js') }}"></script>
+        <script src="{{ url('/assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ url('/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
 
         <!-- Template Javascript -->
-        <script src="../js/main.js"></script>
+        <script src="{{ url('/assets/js/main.js') }}"></script>
     </body>
 </html>
