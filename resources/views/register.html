@@ -8,7 +8,7 @@
         <meta content="Law Firm Website Template" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link href="../img/favicon.ico" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
@@ -16,11 +16,11 @@
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="../lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -29,10 +29,10 @@
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row">
-                        <img style="margin-top: 10px; max-width: 100px; max-height: 80px;" src="img/reic3.png" alt="Logo">
+                        <img style="margin-top: 10px; max-width: 100px; max-height: 80px;" src="../img/reic3.png" alt="Logo">
                         <div class="col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="../views/index.html">
                                     <h1>REIC</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -54,19 +54,19 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="../views/index.html" class="nav-item nav-link active">Inicio</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ley 842 de 2003</a>
                                     <div class="dropdown-menu">
-                                        <a href="portfolio.html" class="dropdown-item">Títulos de la ley</a>
-                                        <a href="single.html" class="dropdown-item">Ley completa</a>
+                                        <a href="../views/titles.html" class="dropdown-item">Títulos de la ley</a>
+                                        <a href="../views/complete.html" class="dropdown-item">Ley completa</a>
                                     </div>
                                 </div>
-                                <a href="team.html" class="nav-item nav-link">About</a>
+                                <a href="../views/about.html" class="nav-item nav-link">About</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="contact.html">Login</a>
-                                <a class="btn" href="contact.html">Registrate</a>
+                                <a class="btn" href="../views/login.html">Login</a>
+                                <a class="btn" href="../views/register.html">Registrate</a>
                             </div>
                         </div>
                     </nav>
@@ -75,89 +75,63 @@
             <!-- Nav Bar End -->
 
 
-            <!-- Portfolio Start -->
-            <div class="portfolio">
+            <!-- Contact Start -->
+            <div class="contact">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our Case Studies</h2>
+                        <h2>Contact Us</h2>
                     </div>
                     <div class="row">
-                        <div class="col-12">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".first">Civil</li>
-                                <li data-filter=".second">Criminal</li>
-                                <li data-filter=".third">Business</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row portfolio-container">
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-1.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Crime</p>
-                                    <a href="#">Murder Case</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <div class="contact-text">
+                                        <h2>Location</h2>
+                                        <p>123 Street, New York, USA</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa fa-phone-alt"></i>
+                                    <div class="contact-text">
+                                        <h2>Phone</h2>
+                                        <p>+012 345 67890</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa fa-envelope"></i>
+                                    <div class="contact-text">
+                                        <h2>Email</h2>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-2.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Politics</p>
-                                    <a href="#">Political Case</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Message" required="required" ></textarea>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit">Send Message</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-3.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Family</p>
-                                    <a href="#">Divorce Case</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-4.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Finance</p>
-                                    <a href="#">Money Laundering</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-5.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Business</p>
-                                    <a href="#">Weber & Partners</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
-                            <div class="portfolio-wrap">
-                                <img src="img/portfolio-6.jpg" alt="Portfolio Image">
-                                <figure>
-                                    <p>Finance</p>
-                                    <a href="#">Property Sharing Case</a>
-                                    <span>01-Jan-2045</span>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Start -->
+            <!-- Contact End -->
 
 
             <!-- Footer Start -->
@@ -241,11 +215,11 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="../lib/isotope/isotope.pkgd.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
