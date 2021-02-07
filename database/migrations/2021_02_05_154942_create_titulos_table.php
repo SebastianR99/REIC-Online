@@ -13,9 +13,10 @@ class CreateTitulosTable extends Migration
      */
     public function up()
     {
-        Schema::create('Titles', function (Blueprint $table) {
-            $table->increments('title_id');
+        Schema::create('titles', function (Blueprint $table) {
+            $table->bigIncrements('title_id');
             $table->string('title_name');
+            $table->foreignId('title_observations')->references('observation_id')->on('observations');
             $table->timestamps();
         });
     }
@@ -27,6 +28,8 @@ class CreateTitulosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('titulos');
+        Schema::dropIfExists('titles', function (Blueprint $table){
+            $table->dropForeign('titles_title_observations_foreign');
+        });
     }
 }

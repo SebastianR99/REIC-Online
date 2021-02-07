@@ -13,8 +13,9 @@ class CreateObservacionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Observations', function (Blueprint $table) {
-            $table->increments('observation_id');
+        Schema::create('observations', function (Blueprint $table) {
+            $table->bigIncrements('observation_id');
+            $table->foreignId('observation_user')->references('user_id')->on('users');
             $table->string('observation_content');
             $table->timestamps();
         });
@@ -27,6 +28,8 @@ class CreateObservacionesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('observaciones');
+        Schema::dropIfExists('observations', function (Blueprint $table){
+            $table->dropForeign('observations_observation_user_foreign');
+        });
     }
 }

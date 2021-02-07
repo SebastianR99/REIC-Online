@@ -13,8 +13,9 @@ class CreateArticulosTable extends Migration
      */
     public function up()
     {
-        Schema::create('Articles', function (Blueprint $table) {
-            $table->increments('article_id');
+        Schema::create('articles', function (Blueprint $table) {
+            $table->bigIncrements('article_id');
+            $table->foreignId('article_chapter')->references('chapter_id')->on('chapters');
             $table->string('article_name');
             $table->string('article_content');
             $table->timestamps();
@@ -28,6 +29,8 @@ class CreateArticulosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articulos');
+        Schema::dropIfExists('articles', function (Blueprint $table){
+            $table->dropForeign('articles_article_chapter_foreign');
+        });
     }
 }

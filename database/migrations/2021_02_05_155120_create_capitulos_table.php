@@ -13,8 +13,9 @@ class CreateCapitulosTable extends Migration
      */
     public function up()
     {
-        Schema::create('Chapters', function (Blueprint $table) {
-            $table->increments('chapter_id');
+        Schema::create('chapters', function (Blueprint $table) {
+            $table->bigIncrements('chapter_id');
+            $table->foreignId('chapter_title')->references('title_id')->on('titles');
             $table->string('chapter_name');
             $table->timestamps();
         });
@@ -27,6 +28,8 @@ class CreateCapitulosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('capitulos');
+        Schema::dropIfExists('chapters', function (Blueprint $table){
+            $table->dropForeign('chapters_chapter_title_foreign');
+        });
     }
 }
