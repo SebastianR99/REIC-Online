@@ -87,10 +87,20 @@
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre
+                                    en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    Durante nuestras actividades académicas nos vemos con la materia de ingeniería ética y legal
+                                    la cual nos encomienda la tarea de dar a conocer la reglamentación de nuestra profesión y
+                                    así nace REIC Online.
+                                </p>
+                                <p>
+                                    Nos propusimos a hacer una página web que hiciera lo más importante que es divulgar la ley
+                                    843 de 2003 por la cual se reglamenta el ejericio de la ingeniería en Colombia, pero no queríamos
+                                    quedarnos en el concepto básico, sino que fuimos un poco más allá y quisimos agregar características
+                                    y funciones para que sea más sencillo y ameno el consultar esta ley en nuestro portal. De esta manera
+                                    nos embarcamos en este proyecto que nos trajo profunda satisfacción cuando se completó.
                                 </p>
                             </div>
                         </div>

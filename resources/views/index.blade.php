@@ -169,16 +169,19 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header">
-                                <h2>Learn About Us</h2>
+                                <h2>Conoce sobre nosotros</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre
+                                    en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    Durante nuestras actividades académicas nos vemos con la materia de ingeniería ética y legal
+                                    la cual nos encomienda la tarea de dar a conocer la reglamentación de nuestra profesión y
+                                    así nace REIC Online.
                                 </p>
-                                <a class="btn" href="{{ url('/about') }}">Learn More</a>
+                                <a class="btn" href="{{ url('/about') }}">Conócenos un poco más</a>
                             </div>
                         </div>
                     </div>
@@ -224,42 +227,6 @@
                                     <i class="fa fa-hand-holding-usd"></i>
                                 </div>
                                 <h3>Business Law</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <h3>Education Law</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-gavel"></i>
-                                </div>
-                                <h3>Criminal Law</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <h3>Cyber Law</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
                                 </p>
@@ -331,7 +298,7 @@
             <!-- Feature End -->
 
             <!-- FAQs Start -->
-            <div class="faqs">
+            <div name="faq_ref" class="faqs">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -360,48 +327,52 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                            <span>2</span> Lorem ipsum dolor sit amet?
+                                            <span>2</span> ¿Puedo discriminar la búsqueda de la ley?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Por supuesto. Si no es suficiente buscarla por títulos, puede ingresar palabras clave que busquen
+                                            un elemento específico en la ley.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                            <span>3</span> Lorem ipsum dolor sit amet?
+                                            <span>3</span> ¿Cómo creo una cuenta?
                                         </a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            Es tan sencillo como usar el botón de "registrarse" en la parte superior derecha.
+                                            No te preocupes, ¡no te pediremos datos personales!.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            <span>4</span> Lorem ipsum dolor sit amet?
+                                            <span>5</span> ¿Puedo hacerles una pregunta si surge una duda?
                                         </a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            ¡Claro que sí!. Una vez que tengas una cuenta puedes utilizar la función de "Formular pregunta" en la parte
+                                            superior derecha que te redirigirá a una página que te permite enviar tu mensaje.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
                                         <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                            <span>5</span> ¿La ley está completa y actualizada?
                                         </a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                            La ley que se presente en este sitio siempre estará vigente y actualizada, no te 
+                                            tendrás que preocupar por que ya no rija lo que encuentres aquí.
                                         </div>
                                     </div>
                                 </div> 
@@ -715,7 +686,7 @@
                         <a href="">Privacy policy</a>
                         <a href="">Cookies</a>
                         <a href="">Help</a>
-                        <a href="">FQAs</a>
+                        <a href="#faq_ref">FQAs</a>
                     </div>
                 </div>
                 <div class="container copyright">
