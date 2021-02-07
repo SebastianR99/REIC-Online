@@ -94,7 +94,7 @@
                         <img src="{{ url('/assets/img/carousel-2.jpg') }}" alt="Carousel Image">
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">¡Regístrate para tener mayor acceso en el sitio!</h1>
-                            <a class="btn animated fadeInUp" href="../views/register.html">Regístrate aquí</a>
+                            <a class="btn animated fadeInUp" href="{{ url('/register') }}">Regístrate aquí</a>
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@
                         <div class="carousel-caption">
                             <h1 class="animated fadeInLeft">Conoce sobre la página y el equipo</h1>
                             <p class="animated fadeInRight">Conoce más sobre REIC Online y el equipo que está detrás de ella</p>
-                            <a class="btn animated fadeInUp" href="../views/about.html">Información aquí</a>
+                            <a class="btn animated fadeInUp" href="{{ url('/about') }}">Información aquí</a>
                         </div>
                     </div>
                 </div>

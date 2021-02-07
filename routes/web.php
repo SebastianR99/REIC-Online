@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LawController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/', [HomeController::class, 'getIndex'] );
+//
+Route::get('/about', [HomeController::class, 'getAbout'] );
+//
+Route::get('/titles', [LawController::class, 'getTitles'] );
+//
+Route::get('/complete', [LawController::class, 'getComplete'] );
 
 Route::get('/login', function () {
     return view('login');
@@ -27,12 +29,4 @@ Route::get('/login', function () {
 
 Route::get('/register', function () {
     return view('register');
-});
-
-Route::get('/titles', function () {
-    return view('titles');
-});
-
-Route::get('/complete', function () {
-    return view('complete');
 });
