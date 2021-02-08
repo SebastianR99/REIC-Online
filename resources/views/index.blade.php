@@ -240,7 +240,7 @@
             
 
             <!-- FAQs Start -->
-            <div name="faq_ref" class="faqs">
+            <div name="#faq_ref" class="faqs">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -555,9 +555,10 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-about">
-                                <h2>About Us</h2>
+                                <h2>Sobre nosotros</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+                                    Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre
+                                    en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética.
                                 </p>
                             </div>
                         </div>
@@ -565,36 +566,29 @@
                             <div class="row">
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Business Law</a>
-                                <a href="">Education Law</a>
-                                <a href="">Immigration Law</a>
+                                <h2>Áreas de la ley</h2>
+                                <a href=" {{ url('/complete') }} ">Ley completa</a>
+                                <a href=" {{ url('/titles') }} ">Ley por títulos</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
+                                <h2>Páginas útiles</h2>
+                                <a href="{{ url('/about') }}">Sobre nosotros</a>
+                                <a href="{{ url('/login') }}">Iniciar sesión</a>
+                                <a href="{{ url('/register') }}">Registrarse</a>
+                                <a href="#faq_ref">FAQs</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <h2>Mantenerse en contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Calle 18 Cra 50. Ciudadela Universitaria Torobajo, Pasto, Nariño</p>
+                                <p><i class="fa fa-phone-alt"></i>+57 300 6789010</p>
+                                <p><i class="fa fa-envelope"></i>reic@hotmail.com</p>
                                 <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/carlos.ortiiz.5"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/gaviriacarlosortiz/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -604,11 +598,7 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="#faq_ref">FQAs</a>
+                        <a href="#">¡Gracias por tu visita!</a>
                     </div>
                 </div>
                 <div class="container copyright">
