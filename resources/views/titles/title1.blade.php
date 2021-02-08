@@ -81,7 +81,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <img class="img-fluid rounded" src="{{ url('/assets/img/single.jpg') }}" alt="Image">
+                            <img class="img-fluid rounded" src="{{ url('/assets/img/title1.jpg') }}" alt="Image">
                             <h1>This is heading 1</h1>
                             <h2>This is heading 2</h2>
                             <h3>This is heading 3</h3>

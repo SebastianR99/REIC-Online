@@ -77,30 +77,23 @@
             <div class="contact">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Contact Us</h2>
+                        <h2>Regístrate</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="contact-info">
                                 <div class="contact-item">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>123 Street, New York, USA</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
                                     <i class="fa fa-phone-alt"></i>
                                     <div class="contact-text">
                                         <h2>Phone</h2>
-                                        <p>+012 345 67890</p>
+                                        <p>+57 300 6789010</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="fa fa-envelope"></i>
                                     <div class="contact-text">
                                         <h2>Email</h2>
-                                        <p>info@example.com</p>
+                                        <p>reic@hotmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -109,19 +102,30 @@
                             <div class="contact-form">
                                 <form>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name" required="required" />
+                                        <input type="text" id="username" name="username" class="form-control" placeholder="Tu nombre de usuario" required="required" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email" required="required" />
+                                        <input type="email" id="e-mail" name="e-mail" class="form-control" placeholder="Tu e-mail" required="required" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" required="required" />
+                                        <input type="password" id="passw" name="passw" class="form-control" placeholder="Tu contraseña" required="required" />
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message" required="required" ></textarea>
+                                        <label for="ocupation"> Seleccione su ocupación: </label>
+                                        <select name="ocupation">
+                                            <option selected="selected" value="estudiante">Estudiante</option>
+                                            <option value="profesional">Profesional</option>
+                                            <option value="otro">Otro</option>
+                                          </select>
+                                    </div>
+                                    <div >
+                                        <label for="condiciones">  </label>
+                                        <input type="checkbox" id="condiciones" name="condiciones"/> Acepto las condiciones de a cuerdo a la Ley 1266 del 31 de diciembre de 2008 “Por la cual se dictan las disposiciones
+                                        generales del Habeas Data"
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit">Send Message</button>
+                                        <button class="btn" type="submit">Registrarse</button>
+                                        <button class="btn" type="reset">Borrar datos en campos</button>
                                     </div>
                                 </form>
                             </div>
