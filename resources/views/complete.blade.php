@@ -77,7 +77,7 @@
             <div class="single">
                 <div class="container">
                     <div class="section-header">
-                        <h2>This is Page Title</h2>
+                        <h2>Ley 842 de 2003 Completa</h2>
                     </div>
                     <div class="row">
                         <div class="col-12">
