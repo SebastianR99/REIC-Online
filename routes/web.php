@@ -21,6 +21,18 @@ Route::get('/about', [HomeController::class, 'getAbout'] );
 //
 Route::get('/titles', [LawController::class, 'getTitles'] );
 //
+Route::get('/titles/title1', [LawController::class, 'getTitle1'] );
+//
+Route::get('/titles/title2', [LawController::class, 'getTitle2'] );
+//
+Route::get('/titles/title3', [LawController::class, 'getTitle3'] );
+//
+Route::get('/titles/title4', [LawController::class, 'getTitle4'] );
+//
+Route::get('/titles/title5', [LawController::class, 'getTitle5'] );
+//
+Route::get('/titles/title6', [LawController::class, 'getTitle6'] );
+//
 Route::get('/complete', [LawController::class, 'getComplete'] );
 
 Route::get('/login', function () {
