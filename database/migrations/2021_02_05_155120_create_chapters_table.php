@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCapitulosTable extends Migration
+class CreateChaptersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,6 +17,7 @@ class CreateCapitulosTable extends Migration
             $table->bigIncrements('chapter_id');
             $table->foreignId('chapter_title')->references('title_id')->on('titles');
             $table->string('chapter_name');
+            $table->string('chapter_des');
             $table->timestamps();
         });
     }

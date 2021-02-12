@@ -62,10 +62,17 @@
                                 </div>
                                 <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
                             </div>
+                            @if(Auth::check())
+                            <div class="ml-auto">
+                                <a class="btn" href="{{ url('/logout')}}">Logout</a>
+                                <a class="btn" href="{{ url('/redactarco') }}">Preguntas</a>
+                            </div>
+                            @else
                             <div class="ml-auto">
                                 <a class="btn" href="{{ url("/login") }}">Login</a>
                                 <a class="btn" href="{{ url('/register') }}">Registrate</a>
                             </div>
+                            @endif
                         </div>
                     </nav>
                 </div>
@@ -77,26 +84,14 @@
             <div class="portfolio">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our Case Studies</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".first">Civil</li>
-                                <li data-filter=".second">Criminal</li>
-                                <li data-filter=".third">Business</li>
-                            </ul>
-                        </div>
+                        <h2>Titulos Ley 842 de 2003</h2>
                     </div>
                     <div class="row portfolio-container">
                         <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-1.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Crime</p>
-                                    <a href="#">Murder Case</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo1') }}">TITULO I</a>
                                 </figure>
                             </div>
                         </div>
@@ -104,9 +99,7 @@
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-2.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Politics</p>
-                                    <a href="#">Political Case</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo2') }}">TITULO II</a>
                                 </figure>
                             </div>
                         </div>
@@ -114,9 +107,7 @@
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-3.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Family</p>
-                                    <a href="#">Divorce Case</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo3') }}">TITULO III</a>
                                 </figure>
                             </div>
                         </div>
@@ -124,9 +115,7 @@
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-4.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Finance</p>
-                                    <a href="#">Money Laundering</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo4') }}">TITULO IV</a>
                                 </figure>
                             </div>
                         </div>
@@ -134,9 +123,7 @@
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-5.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Business</p>
-                                    <a href="#">Weber & Partners</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo5') }}">TITULO V</a>
                                 </figure>
                             </div>
                         </div>
@@ -144,9 +131,7 @@
                             <div class="portfolio-wrap">
                                 <img src="{{ url('/assets/img/portfolio-6.jpg') }}" alt="Portfolio Image">
                                 <figure>
-                                    <p>Finance</p>
-                                    <a href="#">Property Sharing Case</a>
-                                    <span>01-Jan-2045</span>
+                                    <a href="{{ url('/titulo6') }}">TITULO VI</a>
                                 </figure>
                             </div>
                         </div>
@@ -156,55 +141,61 @@
                 </div>
             </div>
             <!-- Portfolio Start -->
+           <!-- Contact Start -->
+           @if(Auth::check())
+            <div class="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <form action='{{url('/redactar')}}' method="POST" >
+                                    @csrf
+                                        <div class="form-group">
+                                        <label for='titulo'>Elige el título para la observación: </label>
+                                        <select id='titulo' name='titulo'>
+                                            <option value='1' selected> TITULO I</option>
+                                            <option value='2'>TITULO II</option>
+                                            <option value='3'>TITULO III</option>
+                                            <option value='4'>TITULO IV</option>
+                                            <option value='5'>TITULO V</option>
+                                            <option value='6'>TITULO VI</option>
+                                        </select>
+                                        </div>
+                                        <div>
+                                            <button class="btn" type="submit">Enviar Observación</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+            <!-- Contact End -->
 
-
-            <!-- Footer Start -->
-            <div class="footer">
+            <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/Pkp-quY98TI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+           <!-- Footer Start -->
+           <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-about">
                                 <h2>About Us</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+                                Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-8">
                             <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Business Law</a>
-                                <a href="">Education Law</a>
-                                <a href="">Immigration Law</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
+                        <div class="col-md-6 col-lg-4"></div>
+                        <div class="col-md-6 col-lg-4"></div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                                <h2>Contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i> Calle 18 No. 50-02 </p>
+                                <p><i class="fa fa-phone-alt"></i>7244309 – 7311449</p>
+                                <p><i class="fa fa-envelope"></i>reiconline@gmail.com</p>
                             </div>
                         </div>
                         </div>
@@ -213,21 +204,10 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
+                        <a href="{{ url('/') }}">Inicio</a>
+                        <a href="{{ url('/complete') }}">Ley 842 de 2003</a>
+                        <a href="{{ url('/titles') }}">Titulos de la ley</a>
+                        <a href="{{ url('/about') }}">About us</a>
                     </div>
                 </div>
             </div>

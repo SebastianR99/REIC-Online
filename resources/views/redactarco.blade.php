@@ -62,22 +62,28 @@
                                 </div>
                                 <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
                             </div>
+                            @if(Auth::check())
+                            <div class="ml-auto">
+                                <a class="btn" href="{{ url('/logout')}}">Logout</a>
+                                <a class="btn" href="{{ url('/redactarco') }}">Preguntas</a>
+                            </div>
+                            @else
                             <div class="ml-auto">
                                 <a class="btn" href="{{ url("/login") }}">Login</a>
                                 <a class="btn" href="{{ url('/register') }}">Registrate</a>
                             </div>
+                            @endif
                         </div>
                     </nav>
                 </div>
             </div>
             <!-- Nav Bar End -->
 
-
             <!-- Contact Start -->
             <div class="contact">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Contact Us</h2>
+                        <h2>Preguntas</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -106,22 +112,15 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="contact-form">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message" required="required" ></textarea>
+                            <div class="contact-form" >
+                                <form action='{{url('/questions')}}' method="POST">
+                                @csrf
+                                    <div class="form-group" >
+                                        <textarea id='content' name='content' class="form-control" placeholder="Redacta tu pregunta" required="required" ></textarea>
+                                        <input id='user_id' name='user_id' type='hidden' value='{{$arreglo['user_id']}}'> 
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit">Send Message</button>
+                                        <button class="btn" type="submit">Enviar Pregunta</button>
                                     </div>
                                 </form>
                             </div>
@@ -140,45 +139,20 @@
                             <div class="footer-about">
                                 <h2>About Us</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+                                Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-8">
                             <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Business Law</a>
-                                <a href="">Education Law</a>
-                                <a href="">Immigration Law</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
+                        <div class="col-md-6 col-lg-4"></div>
+                        <div class="col-md-6 col-lg-4"></div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                                <h2>Contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i> Calle 18 No. 50-02 </p>
+                                <p><i class="fa fa-phone-alt"></i>7244309 – 7311449</p>
+                                <p><i class="fa fa-envelope"></i>reiconline@gmail.com</p>
                             </div>
                         </div>
                         </div>
@@ -187,21 +161,10 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
+                        <a href="{{ url('/') }}">Inicio</a>
+                        <a href="{{ url('/complete') }}">Ley 842 de 2003</a>
+                        <a href="{{ url('/titles') }}">Titulos de la ley</a>
+                        <a href="{{ url('/about') }}">About us</a>
                     </div>
                 </div>
             </div>

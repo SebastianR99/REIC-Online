@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateObservacionesTable extends Migration
+class CreateObservationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,9 @@ class CreateObservacionesTable extends Migration
     {
         Schema::create('observations', function (Blueprint $table) {
             $table->bigIncrements('observation_id');
-            $table->foreignId('observation_user')->references('user_id')->on('users');
-            $table->string('observation_content');
+            $table->foreignId('observation_user')->references('id')->on('users');
+            $table->foreignId('title_observations')->references('title_id')->on('titles');
+            $table->text('observation_content');
             $table->timestamps();
         });
     }

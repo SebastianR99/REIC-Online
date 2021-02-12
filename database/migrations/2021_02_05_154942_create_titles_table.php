@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTitulosTable extends Migration
+class CreateTitlesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,7 @@ class CreateTitulosTable extends Migration
         Schema::create('titles', function (Blueprint $table) {
             $table->bigIncrements('title_id');
             $table->string('title_name');
-            $table->foreignId('title_observations')->references('observation_id')->on('observations');
+            $table->string('title_des');
             $table->timestamps();
         });
     }

@@ -63,8 +63,8 @@
                                 <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="{{ url("/login") }}">Login</a>
-                                <a class="btn" href="{{ url('/register') }}">Registrate</a>
+                                <a class="btn" href="{{ url('/logout')}}">Logout</a>
+                                <a class="btn" href="{{ url('/redactarco') }}">Preguntas</a>
                             </div>
                         </div>
                     </nav>
@@ -164,7 +164,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
-                                <img src="{{ url('/assets/img/about.jpg') }}" alt="Image">
+                            <iframe width="430" height="315" src="https://www.youtube.com/embed/jo3cNXqutXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
@@ -188,13 +188,12 @@
                 </div>
             </div>
             <!-- About End -->
-
-
+            
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our Practices Areas</h2>
+                        <h2>Secciones de interés</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -202,11 +201,23 @@
                                 <div class="service-icon">
                                     <i class="fa fa-landmark"></i>
                                 </div>
-                                <h3>Civil Law</h3>
+                                <h3>Consulta la ley por títulos</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                                    Consulta la ley por el título que sea de tu necesidad.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="{{ url('/titles') }}">Consulta aquí</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                                <h3>Consulta la ley completa</h3>
+                                <p>
+                                    Sigue este vínculo para que se despliegue la ley en su totalidad.
+                                </p>
+                                <a class="btn" href="{{ url('/complete') }}">Consulta aquí</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -214,23 +225,11 @@
                                 <div class="service-icon">
                                     <i class="fa fa-users"></i>
                                 </div>
-                                <h3>Family Law</h3>
+                                <h3>Inicia sesión</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                                    Inicia sesión para sacarle el mayor provecho a REIC Online.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-hand-holding-usd"></i>
-                                </div>
-                                <h3>Business Law</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                                </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a class="btn" href="{{ url('/login') }}">Inicia aquí</a>
                             </div>
                         </div>
                     </div>
@@ -238,65 +237,6 @@
             </div>
             <!-- Service End -->
             
-            
-            <!-- Feature Start -->
-            <div class="feature">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="section-header">
-                                <h2>Why Choose Us</h2>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-gavel"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Best law practices</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-balance-scale"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Efficiency & Trust</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="far fa-smile"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Results you deserve</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="feature-img">
-                                <img src="{{ url('/assets/img/feature.jpg') }}" alt="Feature">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature End -->
-
             <!-- FAQs Start -->
             <div name="faq_ref" class="faqs">
                 <div class="container">
@@ -377,7 +317,7 @@
                                     </div>
                                 </div> 
                             </div>
-                            <a class="btn" href="">Hacer una pregunta</a>
+                            <a class="btn" href="{{url ('/redactarco')}}">Hacer una pregunta</a>
                         </div>
                     </div>
                 </div>
@@ -385,11 +325,11 @@
             <!-- FAQs End -->
 
 
-            <!-- Testimonial Start -->
-            <div class="testimonial">
+                       <!-- Testimonial Start -->
+                       <div class="testimonial">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Review From Client</h2>
+                        <h2>Testimonios</h2>
                     </div>
                     <div class="owl-carousel testimonials-carousel">
                         <div class="testimonial-item">
@@ -399,12 +339,12 @@
                                     <img src="{{ url('/assets/img/testimonial-1.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Nicolás Zúñiga</h2>
+                                    <p>Ingeniero mecatrónico</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        REIC me ha servido mucho para ejercer mi carrera de una buena y eficiente manera.
                                     </p>
                                 </div>
                             </div>
@@ -416,12 +356,12 @@
                                     <img src="{{ url('/assets/img/testimonial-2.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Alejandra Solarte</h2>
+                                    <p>Ingeniera de sistemas</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        Es sumamente importante conocer la reglamentación de la carrera y REIC te ayuda con eso.
                                     </p>
                                 </div>
                             </div>
@@ -433,12 +373,12 @@
                                     <img src="{{ url('/assets/img/testimonial-3.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Camilo Guerrero</h2>
+                                    <p>Ingeniero de petróleos</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        Cuando tengo dudas sobre la ley, siempre acudo a REIC para despejarlas todas.
                                     </p>
                                 </div>
                             </div>
@@ -450,12 +390,12 @@
                                     <img src="{{ url('/assets/img/testimonial-4.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Camila Ojeda</h2>
+                                    <p>Ingeniera civil</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        Gracias a REIC pude conocer la reglamentación de mi profesión sencillamente.
                                     </p>
                                 </div>
                             </div>
@@ -467,12 +407,12 @@
                                     <img src="{{ url('/assets/img/testimonial-1.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Juan Melo</h2>
+                                    <p>Ingeniero electrónico</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        Siempre puedo confiar en REIC cuando necesito información rápida y fiable, nunca falla.
                                     </p>
                                 </div>
                             </div>
@@ -484,29 +424,12 @@
                                     <img src="{{ url('/assets/img/testimonial-2.jpg') }}" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2>Andrea Benavides</h2>
+                                    <p>Ingeniera ambiental</p>
                                 </div>
                                 <div class="col-12">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="{{ url('/assets/img/testimonial-3.jpg') }}" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                        Contamos con REIC para sacarnos de dudas siempre, además siempre atienden mis inquietudes.
                                     </p>
                                 </div>
                             </div>
@@ -521,106 +444,103 @@
             <div class="blog">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Latest From Blog</h2>
+                        <h2>Noticias</h2>
                     </div>
                     <div class="owl-carousel blog-carousel">
                         <div class="blog-item">
                             <img src="{{ url('/assets/img/blog-1.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <h3>¿Cuántas personas se matriculan para estudiar ingeniería en Colombia?</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Civil Law</a>
+                                <a href="">Educación en ingeniería</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>10-Nov-2020</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                Según el Servicio Público de Empleo, hay más de 62 mil vacantes para ingenieros informáticos 
+                                y en el país hay un déficit de 80 mil ingenieros, hechos que deberían hacer este campo atractivo 
+                                para los estudiantes. Sin embargo, las cifras indican que los jóvenes prefieren otras áreas de estudio.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.semana.com/educacion/articulo/cuantas-personas-se-matriculan-para-estudiar-ingeniaria-en-colombia/202009/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
                             <img src="{{ url('/assets/img/blog-2.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <h3>Inicia el programa de MinTic para formar programadores</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Family Law</a>
+                                <a href="">Política en ingeniería</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>12-Sep-2020</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                El programa Misión TIC 2022 apunta a atender una necesidad urgente de la economía colombiana: la formación
+                                de 100.000 programadores. Pero expertos discuten si le servirán al país profesionales capacitados en tiempo 
+                                récord.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.semana.com/nacion/articulo/inicia-el-programa-de-mintic-para-formar-programadores/202000/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
                             <img src="{{ url('/assets/img/blog-3.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <h3>La aplicación de estudiantes colombianos que fue premiada por la NASA</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
+                                <a href="">Ingeniería en el mundo</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>01-Feb-2021</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                Los colombianos ganaron el Space Apps COVID-19 Challenge, un concurso organizado por la agencia espacial 
+                                norteamericana, al presentar una aplicación de agricultura que vincula a los agricultores familiares y 
+                                los mercados locales con el fin de enfrentar el desabastecimiento de alimentos ocasionado por la pandemia. 
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.elespectador.com/noticias/educacion/la-aplicacion-de-estudiantes-colombianos-premiada-por-la-nasa/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            <img src="{{ url('/assets/img/blog-1.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <img src="{{ url('/assets/img/blog-4.jpg') }}" alt="Blog">
+                            <h3>Estas son las cuatro ingenierías más buscadas en Colombia</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Education Law</a>
+                                <a href="">Ingeniería en Colombia</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>03-Oct-2019</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                Industrial, Civil, Sistemas y Ambiental son las ingenierías que despiertan mayor interés en los centennials
+                                 actualmente. Si aún no sabe cuál elegir, acá le mostramos las características principales de cada una.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.elespectador.com/noticias/actualidad/estas-son-las-cuatro-ingenierias-mas-buscadas-en-colombia/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            <img src="{{ url('/assets/img/blog-2.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <img src="{{ url('/assets/img/blog-5.jpg') }}" alt="Blog">
+                            <h3>Una tecnología para reforzar las casas de familias vulnerables en Colombia</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Criminal Law</a>
+                                <a href="">Ingeniería en el mundo</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>25-Noc-2019</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                Desde 2014, Build Change ayuda a intervenir viviendas para hacerlas resistentes a los sismos y otros 
+                                fenómenos naturales. Para continuar con su labor recibirá un apoyo de US$500.000.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.elespectador.com/noticias/economia/una-tecnologia-para-reforzar-las-casas-de-familias-vulnerables-en-colombia/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                         <div class="blog-item">
-                            <img src="{{ url('/assets/img/blog-3.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
+                            <img src="{{ url('/assets/img/blog-6.jpg') }}" alt="Blog">
+                            <h3>Colombia, en la búsqueda de una verdadera interacción con las máquinas</h3>
                             <div class="meta">
                                 <i class="fa fa-list-alt"></i>
-                                <a href="">Cyber Law</a>
+                                <a href="">Educación en ingeniería</a>
                                 <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
+                                <p>05-Oct-2019</p>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                Un grupo de estudiantes de la Universidad de los Andes desarrolló un novedoso modelo de inteligencia 
+                                artificial que le permite a las máquinas reaprender a partir de los errores. Su diseño fue presentado
+                                en la Conferencia Europea de Visión por Computador, en Münich, Alemania, donde fueron el único grupo 
+                                latinoamericano.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="{{ url('/assets/img/blog-1.jpg') }}" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="https://www.elespectador.com/noticias/ciencia/colombia-en-la-busqueda-de-una-verdadera-interaccion-con-las-maquinas/"> Saber más <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -635,45 +555,20 @@
                             <div class="footer-about">
                                 <h2>About Us</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+                                Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-8">
                             <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Business Law</a>
-                                <a href="">Education Law</a>
-                                <a href="">Immigration Law</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
+                        <div class="col-md-6 col-lg-4"></div>
+                        <div class="col-md-6 col-lg-4"></div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
+                                <h2>Contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i> Calle 18 No. 50-02 </p>
+                                <p><i class="fa fa-phone-alt"></i>7244309 – 7311449</p>
+                                <p><i class="fa fa-envelope"></i>reiconline@gmail.com</p>
                             </div>
                         </div>
                         </div>
@@ -682,21 +577,10 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="#faq_ref">FQAs</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
+                        <a href="{{ url('/') }}">Inicio</a>
+                        <a href="{{ url('/complete') }}">Ley 842 de 2003</a>
+                        <a href="{{ url('/titles') }}">Titulos de la ley</a>
+                        <a href="{{ url('/about') }}">About us</a>
                     </div>
                 </div>
             </div>
