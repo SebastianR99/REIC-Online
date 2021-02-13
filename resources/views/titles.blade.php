@@ -79,68 +79,73 @@
             </div>
             <!-- Nav Bar End -->
 
-
-            <!-- Portfolio Start -->
-            <div class="portfolio">
+            <!-- Service Start -->
+            <div class="service">
                 <div class="container">
                     <div class="section-header">
                         <h2>Titulos Ley 842 de 2003</h2>
                     </div>
-                    <div class="row portfolio-container">
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-1.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo1') }}">TITULO I</a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-2.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo2') }}">TITULO II</a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-3.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo3') }}">TITULO III</a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-4.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo4') }}">TITULO IV</a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-5.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo5') }}">TITULO V</a>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
-                            <div class="portfolio-wrap">
-                                <img src="{{ url('/assets/img/portfolio-6.jpg') }}" alt="Portfolio Image">
-                                <figure>
-                                    <a href="{{ url('/titulo6') }}">TITULO VI</a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-landmark"></i>
+                                </div>
+                                <h3>TITULO I</h3>
+                                <a class="btn" href="{{ url('/titulo2') }}">Ir</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h3>TITULO II</h3>
+                                <a class="btn" href="{{ url('/titulo2') }}">Ir</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-hand-holding-usd"></i>
+                                </div>
+                                <h3>TITULO III</h3>
+                                <a class="btn" href="{{ url('/titulo3') }}">Ir</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <h3>TITULO IV</h3>
+                                <a class="btn" href="{{ url('/titulo4') }}">Ir</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                                <h3>TITULO V</h3>
+                                <a class="btn" href="{{ url('/titulo5') }}">Ir</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3>TITULO VI</h3>
+                                <a class="btn" href="{{ url('/titulo6') }}">Ir</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Start -->
+            <!-- Service End -->
+
+            
            <!-- Contact Start -->
            @if(Auth::check())
             <div class="contact">
