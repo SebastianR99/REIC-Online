@@ -65,7 +65,7 @@
                             @if(Auth::check())
                             <div class="ml-auto">
                                 <a class="btn" href="{{ url('/logout')}}">Logout</a>
-                                <a class="btn" href="{{ url('/redactarco') }}">Preguntas</a>
+                                <a class="btn" href="{{ url('/questions-show') }}">Preguntas</a>
                             </div>
                             @else
                             <div class="ml-auto">
