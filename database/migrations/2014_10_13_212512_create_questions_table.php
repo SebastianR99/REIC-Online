@@ -15,8 +15,9 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('question_id');
-            $table->foreignId('question_user')->references('user_id')->on('users');
-            $table->string('question_content');
+            $table->foreignId('question_user')->references('id')->on('users');
+            $table->text('question_content');
+            $table->text('question_reply')->default('no');
             $table->timestamps();
         });
     }

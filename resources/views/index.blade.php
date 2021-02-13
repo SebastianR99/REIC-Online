@@ -63,8 +63,8 @@
                                 <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="{{ url("/login") }}">Login</a>
-                                <a class="btn" href="{{ url('/register') }}">Registrate</a>
+                                <a class="btn" href="{{ url('/logout')}}">Logout</a>
+                                <a class="btn" href="{{ url('/redactarco') }}">Preguntas</a>
                             </div>
                         </div>
                     </nav>
@@ -164,7 +164,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
-                                <img src="{{ url('/assets/img/reic-logo.jpg') }}" alt="Image">
+                            <iframe width="430" height="315" src="https://www.youtube.com/embed/jo3cNXqutXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
@@ -188,8 +188,7 @@
                 </div>
             </div>
             <!-- About End -->
-
-
+            
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
@@ -238,7 +237,6 @@
             </div>
             <!-- Service End -->
             
-
             <!-- FAQs Start -->
             <div name="#faq_ref" class="faqs">
                 <div class="container">
@@ -319,7 +317,7 @@
                                     </div>
                                 </div> 
                             </div>
-                            <a class="btn" href="">Hacer una pregunta</a>
+                            <a class="btn" href="{{url ('/redactarco')}}">Hacer una pregunta</a>
                         </div>
                     </div>
                 </div>
@@ -327,8 +325,8 @@
             <!-- FAQs End -->
 
 
-            <!-- Testimonial Start -->
-            <div class="testimonial">
+                       <!-- Testimonial Start -->
+                       <div class="testimonial">
                 <div class="container">
                     <div class="section-header">
                         <h2>Testimonios</h2>
@@ -557,39 +555,20 @@
                             <div class="footer-about">
                                 <h2>Sobre nosotros</h2>
                                 <p>
-                                    Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre
-                                    en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética.
+                                Somos un equipo de ingenieros de la universidad de Nariño cursando nuestro décimo semestre en esta universidad. Nos apasiona el desarrollo web y nos interesa la ley y la ética
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-8">
                             <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Áreas de la ley</h2>
-                                <a href=" {{ url('/complete') }} ">Ley completa</a>
-                                <a href=" {{ url('/titles') }} ">Ley por títulos</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Páginas útiles</h2>
-                                <a href="{{ url('/about') }}">Sobre nosotros</a>
-                                <a href="{{ url('/login') }}">Iniciar sesión</a>
-                                <a href="{{ url('/register') }}">Registrarse</a>
-                                <a href="#faq_ref">FAQs</a>
-                            </div>
-                        </div>
+                        <div class="col-md-6 col-lg-4"></div>
+                        <div class="col-md-6 col-lg-4"></div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-contact">
-                                <h2>Mantenerse en contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Calle 18 Cra 50. Ciudadela Universitaria Torobajo, Pasto, Nariño</p>
-                                <p><i class="fa fa-phone-alt"></i>+57 300 6789010</p>
-                                <p><i class="fa fa-envelope"></i>reic@hotmail.com</p>
-                                <div class="footer-social">
-                                    <a href="https://www.facebook.com/carlos.ortiiz.5"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/gaviriacarlosortiz/"><i class="fab fa-instagram"></i></a>
-                                </div>
+                                <h2>Contacto</h2>
+                                <p><i class="fa fa-map-marker-alt"></i> Calle 18 No. 50-02 </p>
+                                <p><i class="fa fa-phone-alt"></i>7244309 – 7311449</p>
+                                <p><i class="fa fa-envelope"></i>reiconline@gmail.com</p>
                             </div>
                         </div>
                         </div>
@@ -598,17 +577,10 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="#">¡Gracias por tu visita!</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                        </div>
+                        <a href="{{ url('/') }}">Inicio</a>
+                        <a href="{{ url('/complete') }}">Ley 842 de 2003</a>
+                        <a href="{{ url('/titles') }}">Titulos de la ley</a>
+                        <a href="{{ url('/about') }}">About us</a>
                     </div>
                 </div>
             </div>
